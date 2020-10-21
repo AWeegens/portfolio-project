@@ -20,7 +20,7 @@ const navs = [{
 {
     Text: ' Pregnancy Decisions ',
     Url: ' link-3.html ',
-    Class: ' Click here to visit Link-3 ',
+    Class: ' link-3 ',
     Alt: ' Click Here to visit Pregnancy Decisions '
 }
 ];
