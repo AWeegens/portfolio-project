@@ -31,7 +31,8 @@ header {
 
 .navlink {
     list-style-type: none;
-    margin: 0;
+    margin: 15px;
+    padding: 20px;
 }
 
 .navlink a {
