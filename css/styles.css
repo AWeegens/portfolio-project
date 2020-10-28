@@ -71,3 +71,7 @@ header {
         right: 0;
     }
 }
+
+body {
+    background: url(../img/pregnancy-silhouette.png);
+}
