@@ -7,19 +7,19 @@ const navs = [{
 },
 {
     Text: ' Pregnancy Facts ',
-    Url: ' link-1.html ',
+    Url: '../html/pregnancy-facts.html ',
     Class: ' link-1',
     Alt: ' Click Here to visit Pregnancy Facts '
 },
 {
     Text: ' Pregnancy Reality ',
-    Url: ' link-2.html',
+    Url: '../html/pregnancy-reality.html',
     Class: ' link-2 ',
     Alt: ' Click here to visit Pregnancy Reality '
 },
 {
     Text: ' Pregnancy Decisions ',
-    Url: ' link-3.html ',
+    Url: '../html/pregnancy-decisions.html ',
     Class: ' link-3 ',
     Alt: ' Click Here to visit Pregnancy Decisions '
 }
