@@ -80,3 +80,152 @@ body {
     color: white;
     background-color: gray;
 }
+
+div {
+    flex: 
+}
+
+.page1, .page2, .page3 {
+    text-align: center;
+}
+
+.page1, .page2 {
+    margin-bottom: 50px;
+}
+
+.page1 h1 {
+     background-color: lightgray;
+     padding: 10px;
+     margin: 10px;
+}
+
+.page1 p {
+    background-color: black;
+    padding-bottom: 3px;
+}
+
+.page2 h1 {
+     background-color: darkgray;
+     padding: 10px;
+     margin: 10px;
+}
+
+.page2 p {
+    background-color: black;
+    padding-bottom: 3px;
+}
+
+.page3 h1{
+     background-color: gray;
+     padding: 10px;
+     margin: 10px;
+}
+
+.page3 p {
+    background-color: black;
+    padding-bottom: 3px;
+}
+
+a {
+    background-color: white;
+    padding: 5px;
+}
+
+.entry1 {
+    background-color:white;
+    text: black;
+}
+
+.flexChild {
+    color: white;
+    padding: 20px;
+    background: indigo;
+    /*   margin: 2px; */
+    /*height: 100px;
+    width: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*   flex: 1; */
+    flex-grow: ;
+    flex-shrink: ;
+    flex-basis: ;
+    /*   flex: 0 1 300px; */
+    /*   align-self: flex-end; */
+  }
+  
+  .flexChild3 {
+    /*   order: -1; // Default is zero */
+    /*   flex-grow: 3; */
+    /*   flex-shrink: 3; */
+    /*   flex-basis: 300px; */
+    /*   align-self: flex-start; */
+  }
+
+  @media screen and (min-width: 679px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 50px;
+        grid-template-rows: 100px 100px 100px;
+        /*   grid: 1fr 1fr 1fr 200px / 100px 400px 100px; */
+        grid-row-gap: 5px;
+        grid-column-gap: 20px; 
+        gap: 5px;
+    }
+
+    .nav {
+        background: none;
+    }
+
+    .page1 .page2 {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        background-color: white;
+    }
+
+    a {
+        background-color: none;
+    }
+
+    .flexChild {
+        color: white;
+        padding: 20px;
+        background: indigo;
+        /*   margin: 2px; */
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        /*   flex: 1; */
+        flex-grow: ;
+        flex-shrink: ;
+        flex-basis: ;
+        /*   flex: 0 1 300px; */
+        /*   align-self: flex-end; */
+        flex-wrap: wrap;
+    }
+      
+    .flexChild3 {
+        /*   order: -1; // Default is zero */
+        /*   flex-grow: 3; */
+        /*   flex-shrink: 3; */
+        /*   flex-basis: 300px; */
+        /*   align-self: flex-start; */
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        padding: 20px;
+        width: 400px;
+        text-align: left;
+        height: auto;
+        color: black;
+        flex-wrap: wrap;
+      }
+    
+  }
