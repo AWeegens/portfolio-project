@@ -1,14 +1,51 @@
-html,
 body {
+    background: url(../img/pregnancy-silhouette.png);
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: slategray;
+}
+
+.page1, .page2, .page3 {
+    text-align: center;
+    padding-left: 5%;
+}
+
+.FactsHeading, .RealityHeading, .DecisionsHeading {
+     background-color: lightblue;
+     padding: 10px;
+     margin: 10px;
+}
+
+.FactsIntro, .RealityIntro, .DecisionsIntro {
+    background-color: darkgray;
+    padding: 25px;
+    margin: 25px;
+    padding-bottom: 3px;
+    text-overflow: none;
+}
+
+.FactsLink, .RealityLink, .DecisionsLink {
+    background-color: white;
+    color: black;
+}
+
+.entry1 {
+    background-color:white;
+    text: black;
+}
+
+
+html {
     text-overflow: ellipsis;
-    white-space: nowrap;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
+.NavigationalHeader {
     background-color: gray;
     border-bottom: 4px black solid;
     width: 100%;
@@ -19,33 +56,33 @@ header {
 }
 
 .logo {
-    color: #ffffff;
+    color: black;
     letter-spacing: 3px;
 }
+@media screen and (min-width: 679px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+    .navlink {
+        list-style-type: none;
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .navlink a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .burger {
+        font-size: 1.2em;
+        display: none;
+    }
 }
-
-.navlink {
-    list-style-type: none;
-    margin: 15px;
-    padding: 20px;
-}
-
-.navlink a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.burger {
-    font-size: 1.2em;
-    display: none;
-}
-
 @media screen and (max-width: 678px) {
     .burger {
         display: block;
@@ -72,82 +109,23 @@ header {
     }
 }
 
-body {
-    background: url(../img/pregnancy-silhouette.png);
-    background-attachment: fixed;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    color: white;
-    background-color: gray;
-}
-
-div {
-    flex: 
-}
-
+/*
 .page1, .page2, .page3 {
-    text-align: center;
+    flex: auto;
 }
 
-.page1, .page2 {
-    margin-bottom: 50px;
-}
-
-.page1 h1 {
-     background-color: lightgray;
-     padding: 10px;
-     margin: 10px;
-}
-
-.page1 p {
-    background-color: black;
-    padding-bottom: 3px;
-}
-
-.page2 h1 {
-     background-color: darkgray;
-     padding: 10px;
-     margin: 10px;
-}
-
-.page2 p {
-    background-color: black;
-    padding-bottom: 3px;
-}
-
-.page3 h1{
-     background-color: gray;
-     padding: 10px;
-     margin: 10px;
-}
-
-.page3 p {
-    background-color: black;
-    padding-bottom: 3px;
-}
-
-a {
-    background-color: white;
-    padding: 5px;
-}
-
-.entry1 {
-    background-color:white;
-    text: black;
-}
-
-.flexChild {
+/*.flexChild {
     color: white;
     padding: 20px;
     background: indigo;
     /*   margin: 2px; */
     /*height: 100px;
     width: 100px; */
-    display: flex;
+   /* display: flex;
     justify-content: center;
     align-items: center;
     /*   flex: 1; */
-    flex-grow: ;
+   /* flex-grow: ;
     flex-shrink: ;
     flex-basis: ;
     /*   flex: 0 1 300px; */
@@ -163,7 +141,7 @@ a {
   }
 
   @media screen and (min-width: 679px) {
-    div {
+    .page1, .page2, .page3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 50px;
         grid-template-rows: 100px 100px 100px;
@@ -177,35 +155,41 @@ a {
         background: none;
     }
 
-    .page1 .page2 {
-        margin-bottom: 5px;
+    .FactsHeading, .RealityHeading, .DecisionsHeading {
+        color: black;
+        background: none;
+        text-align: left;
+        padding: 0;
+        margin-top: 40px;
     }
 
-    h1 {
-        background-color: white;
+    .FactsIntro, .RealityIntro, .DecisionsIntro {
+        width: 50%;
     }
 
-    a {
-        background-color: none;
+    .FactsLink, .RealityLink, .DecisionsLink {
+        background: none;
+        color: black;
+        margin-top: 50px;
     }
 
-    .flexChild {
+ /*   .flexChild {
         color: white;
         padding: 20px;
         background: indigo;
         /*   margin: 2px; */
-        height: 100px;
+   /*     height: 100px;
         width: 100px;
         display: flex;
         justify-content: center;
         align-items: left;
         /*   flex: 1; */
-        flex-grow: ;
+   /*     flex-grow: ;
         flex-shrink: ;
         flex-basis: ;
         /*   flex: 0 1 300px; */
         /*   align-self: flex-end; */
-        flex-wrap: wrap;
+   /*     flex-wrap: wrap;
     }
       
     .flexChild3 {
@@ -216,7 +200,7 @@ a {
         /*   align-self: flex-start; */
     }
 
-    .card {
+   /* .card {
         display: flex;
         flex-direction: row;
         background-color: lightgray;
@@ -229,3 +213,4 @@ a {
       }
     
   }
+  */
