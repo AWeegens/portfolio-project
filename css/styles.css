@@ -145,8 +145,6 @@ flex-grow: 1;
     }
 }
 
-
-
   @media screen and (min-width: 1178px) {
     .page1, .page2, .page3 {
         display: grid;
