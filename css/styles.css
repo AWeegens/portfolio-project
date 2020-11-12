@@ -120,7 +120,12 @@ flex-basis: content;
 flex-grow: 1;
 }
 
-@media screen and (min-width: 679px) {
+@media screen and (min-width: 640px) {
+    
+    .NavigationalHeader {
+        width: 100%;
+    }
+    
     .nav {
         display: flex;
         justify-content: space-around;
@@ -145,14 +150,14 @@ flex-grow: 1;
     }
 }
 
-  @media screen and (min-width: 1178px) {
+@media screen and (min-width: 1000px) {
     .page1, .page2, .page3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr auto;
         grid-template-rows: auto;
         grid-column-gap: 5px; 
     }
-
+ 
     .nav {
         background: none;
     }
