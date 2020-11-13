@@ -69,6 +69,20 @@ html {
     margin: 15px;
     padding: 30px;
 }
+/*
+#AnimationContainer {
+    position: relative;
+}
+
+#storkJS {
+    position: absolute;
+}
+*/
+img.stork {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .burger {
     display: block;
@@ -125,14 +139,19 @@ flex-grow: 1;
     .NavigationalHeader {
         width: 100%;
     }
-    
+
     .nav {
         display: flex;
+        position: relative;
+        right: auto;
+        top: auto;
+        flex-direction: row;
         justify-content: space-around;
-        width: 30%;
+        padding: 0;
     }
 
     .navlink {
+        display: block;
         list-style-type: none;
         margin: 15px;
         padding: 20px;
@@ -205,3 +224,4 @@ flex-grow: 1;
         flex-basis: content;
         flex-grow: 1;
         }
+    }
