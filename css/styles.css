@@ -151,7 +151,7 @@ flex-grow: 1;
     }
 
     .navlink {
-        display: block;
+        display: inline-block;
         list-style-type: none;
         margin: 15px;
         padding: 20px;
