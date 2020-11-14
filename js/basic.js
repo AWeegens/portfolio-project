@@ -1,14 +1,9 @@
-//$(image).animate({left: '-500px'});
+const pregnant = prompt ("Are you pregnant?");
 
-/*const storkJS = document.getElementById('storkJS');
+const pregnantAnswer = pregnant.toUpperCase();
 
-storkJS.addEventListener('click', () => {
-    storkJS.animate({left: '-500px'});
-}); */
-/*
-function Move() {
-    var elem = document.getElementById("AnimationContainer);
-    var pos = 0;
-    var id
+if(pregnantAnswer==="YES") {
+    const weeks = prompt ("How many weeks along are you?");
+    const timeLeft = 40 - weeks;
+    alert("Congratulations! You only have " + timeLeft + " weeks left!");
 }
-*/

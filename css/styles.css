@@ -1,10 +1,22 @@
-body {
+.homebody {
     background: url(../img/pregnancy-silhouette.png);
     background-attachment: fixed;
     background-position-x: center;
     background-repeat: no-repeat;
     color: white;
     background-color: slategray;
+}
+
+.realityBody {
+    background-color: #ffdae0;
+}
+
+.factsBody {
+    background-color: lightblue;
+}
+
+.decisionsBody {
+    background-color: lightyellow;
 }
 
 .page1, .page2, .page3 {
@@ -138,6 +150,7 @@ flex-grow: 1;
     
     .NavigationalHeader {
         width: 100%;
+        background-color: lightgray;
     }
 
     .nav {
@@ -151,11 +164,9 @@ flex-grow: 1;
     }
 
     .navlink {
-        display: inline-block;
+        display: flex;
         list-style-type: none;
-        margin: 15px;
-        padding: 20px;
-    }
+     }
 
     .navlink a {
         color: black;
