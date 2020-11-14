@@ -43,10 +43,13 @@
     color: black;
 }
 
-.entry1 {
-    background-color:white;
+.entry {
+    border-style: solid;
+    border-width: 15px;
+    border-color: darkgray;
+    border-radius: 25px;
+    padding-left: 10px;
 }
-
 
 html {
     text-overflow: ellipsis;
@@ -74,13 +77,19 @@ html {
 .Decision1 span:nth-child(2n+1),
 .Decision2 span:nth-child(2n+1),
 .Decision3 span:nth-child(2n+1) {
-    background-color: black;
+    background-color: yellow;
 }
 
 .Decision1, .Decision2, .Decision3 {
     margin: 15px;
     padding: 30px;
+    border-style: inset;
 }
+
+.decisionTitle {
+    font-weight: bold;
+}
+
 /*
 #AnimationContainer {
     position: relative;
@@ -178,6 +187,10 @@ flex-grow: 1;
         font-size: 1.2em;
         display: none;
     }
+
+    .entry {
+        border-radius: 0;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -208,6 +221,10 @@ flex-grow: 1;
         background: none;
         color: black;
         margin-top: 50px;
+    }
+
+    .postHeading {
+        text-align: center;
     }
 
     .flexParent {
