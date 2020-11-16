@@ -226,7 +226,7 @@ flex-grow: 1;
         margin-left: 35px;
         margin-right: 35px;
         margin-top: 10px;
-     }
+    }
 
     .page1, .page2, .page3 {
         display: grid;
@@ -271,9 +271,9 @@ flex-grow: 1;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: baseline;
-        }
+    }
         
-        .flexChild {
+    .flexChild {
         color: white;
         padding: 20px;
         background: lightskyblue;
@@ -284,34 +284,28 @@ flex-grow: 1;
         align-items: baseline;
         flex-basis: content;
         flex-grow: 1;
-        }
+    }
 
-        .imageAnimation {
-            height: 325px;
-            display: block;
-        }
+    .imageAnimation {
+        height: 325px;
+        display: block;
+    }
 
-        img.stork {
-            margin-left: none;
-            animation-name: storkTest;
-            animation-duration: 5s;
-        }
+    #AnimationContainer {
+        padding-bottom: 15px;
+        position: absolute;
+        animation: linear;
+        animation-name: run;
+        animation-duration: 5s;
+    }
 
-        #AnimationContainer {
-            padding-bottom: 15px;
-            position: absolute;
-            -webkit-animation: linear;
-            -webkit-animation-name: run;
-            -webkit-animation-duration: 5s;
+    @keyframes run {
+        0% {
+            left:0;
         }
-
-        @-webkit-keyframes run {
-            0% {
-                left:0;
-            }
-            100% {
-                left: 100%;
-                , webkit-transform: scaleX(-1);
-            }
+        100% {
+            left: 100%;
+            webkit-transform: scaleX(-1);
         }
     }
+} 
