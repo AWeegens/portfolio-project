@@ -286,6 +286,12 @@ flex-grow: 1;
         flex-grow: 1;
     }
 
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     .imageAnimation {
         height: 325px;
         display: block;
