@@ -118,12 +118,16 @@ img.stork {
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
-    list-style-position: inside;
+    list-style-type: none;
     transition: all 400ms;
 }
 .navlink {
     text-align: center;
     padding-bottom: 25px;
+}
+
+.Home, .link-1, .link-2, .link-3 {
+    color: white;
 }
 
 .nav-active {

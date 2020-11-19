@@ -31,8 +31,8 @@ ${navs.map(nav => `<li class="navlink"><a href=${nav.Url} class="${nav.Class}" a
 `;
 
 
-// document.querySelector(' ul ') searches our HTML page for an unordered list
-// or <ul> tag. It uses .innerHTML to output our navBarMarkup variable.
+// document.querySelector(' ul ') searches the HTML page for an unordered list
+// or <ul> tag. It uses .innerHTML to output the navBarMarkup variable.
 
 document.querySelector(' ul ').innerHTML = navBarMarkup;
 
