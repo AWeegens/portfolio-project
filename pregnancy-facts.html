@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Use head to link stylesheets etc. and create the title-->
 <head>
     <link rel = "stylesheet" href = "css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -8,6 +10,7 @@
     <title>Document</title>
 </head>
 
+<!--Get navigational header setup-->
 <body class = "factsBody">
     <header class = "NavigationalHeader">
         <h1 class="logo">Pregnancy</h1>
@@ -19,6 +22,7 @@
 
     <h1>Pregnancy Facts</h1>
     <p>Check out some facts below the stork!</p>
+<!--Set up basic "timeline" with Flex-->
     <div>
         <section class="flexParent">
             <div class="flexChild flexChild1">Pregnancy Starts</div>
@@ -28,17 +32,20 @@
             <div class="flexChild flexChild5">Here comes baby!</div>
         </section>
     </div>
+<!--Stork picture for animation-->    
     <div class="imageAnimation">
         <div id="AnimationContainer">
             <img id="storkJS" class="stork" src="img/stork-baby.png" alt="stork delivering baby">
         </div>
     </div>
+<!--Put down some facts that can be expanded on-->    
     <section class="factSection">
         <p class="fact">Fact: This happens to your body during pregnany.</p>
         <p class="fact">Fact: People say this, but it can actually be that.</p>
         <p class="fact">Fact: Lots of things are not fully explained to first-time moms.</p>
         <p class="fact">Fact: Google can be helpful and VERY scarily unhelpful.</p>
     </section>
+<!--Connect to JavaScript-->    
     <script src="js/nav.js"> </script>
 </body>
 
