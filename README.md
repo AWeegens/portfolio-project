@@ -7,6 +7,10 @@
 
 The actual information may not be on the pages, but will allow the information to be easily added in the future.
 
+
+Directions: If you want to use the JavaScript at the beginning of the homepage, use "yes" to continue and une a numerical value for the second question. 
+
+
 Project Requirements Met:
 1. JavaScript: Show/hide one or more content areas or elements on your site through clicking a button or some other user interation
 2. CSS: Use ":nth-child" or "nth-of-type" to style a series of elements on your page - for example, change the background color for every other row in a table
