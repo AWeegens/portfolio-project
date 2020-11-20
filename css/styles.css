@@ -5,7 +5,7 @@
     background-position-x: center;
     background-repeat: no-repeat;
     color: white;
-    background-color: slategray;
+    background-color: gray;
 }
 
 .realityBody {
@@ -259,6 +259,12 @@ flex-grow: 1;
         text-align: left;
         padding: 0;
         margin-top: 40px;
+        width: 150px;
+    }
+
+    .FactsLink, .RealityLink, .DecisionsLink {
+        text-align: right;
+        padding-right: 25px;
     }
 
     .FactsIntro, .RealityIntro, .DecisionsIntro {
